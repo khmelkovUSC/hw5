@@ -20,4 +20,12 @@ std::set<std::string> wordle(
     const std::string& floating,
     const std::set<std::string>& dict);
 
+std::set<std::string> insertLetter(
+    const std::string& in,
+    size_t i,
+    const std::string& floating,
+    const std::set<std::string>& dict);
+
+void addToResults(std::set<std::string>& results, std::set<std::string>::iterator toAdd, std::set<std::string>::iterator end);
+
 #endif
